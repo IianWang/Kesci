@@ -14,7 +14,7 @@
 * 数据集仅包含数值型的变量是因为做了PCA变换。特征V1,V2,...V28分别是通过PCA变换得到的主成成分。<br>
 * 没有做PCA变换的变量是 Time 和 Amount <br>
 * 属性描述<br>
-文件 creditcardfraud.csv中包含31个字段，具体信息如下：
+文件 creditcardfraud.csv中包含31个字段，具体信息如下：<br>
 每一行记录了一条交易。<br>
 
 |**No** |**属性** |**数据类型** |**字段描述** |
@@ -24,16 +24,13 @@
 |3 |V2 |Float |主成成分2 |
 |4 |V3 |Float |主成成分3 |
 |5 |V4 |Float |主成成分4 |
+|... |... |... |... |
 |29 |V28 |Float |主成成分28 |
 |30 |Amount |Float |该条交易记录的金额 |
 |31 |Class |Float |类别是否为欺诈：1-是，0-否 |
 
 
-
-
-
-
-<br>导入数据，查看数据前5行<br>
+<br>*导入数据，查看数据前5行*<br>
 `df = pd.read_csv('/home/kesci/input/fraud_detection/creditcardfraud.csv')`<br>
 `df.head()`<br>
 
